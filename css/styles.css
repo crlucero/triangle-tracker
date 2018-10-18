@@ -1,0 +1,16 @@
+.container {
+  margin-top: 50px
+}
+
+.equilateral {
+  display: none;
+
+}
+
+.scalene {
+  display: none;
+}
+
+.isosceles {
+  display: none;
+}
