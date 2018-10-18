@@ -16,9 +16,7 @@ $(document).ready(function() {
 if (sideA === sideC && sideA != sideB ) {
   $(".isosceles").show();
 }
-  if (sideA !== sideB && sideA !== sideC && sideB !== sideC) {
-    $(".scalene").show();
-  }
+
 if ((sideA) + (sideB) <= sideC){
     $(".not-triangle").show();
 }
@@ -28,6 +26,14 @@ if ((sideB) + (sideC) <= sideA){
 if ((sideA) + (sideC) <= sideB){
     $(".not-triangle").show();
 }
+else if ((sideA !== sideB !== sideC) &&
+    ((sideA) + (sideB) >= sideC) &&
+    ((sideB) + (sideC) >= sideA) &&
+    ((sideA) + (sideC) >= sideB))
+ {
+  $(".scalene").show();
+}
+
 });
 
 });
